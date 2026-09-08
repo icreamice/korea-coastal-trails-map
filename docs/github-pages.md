@@ -26,7 +26,7 @@ GitHub의 자동 배포는 Pages 화면만 갱신하며 기존 인증 사이트�
 
 ```sh
 pnpm install --frozen-lockfile
-pnpm exec tsc --noEmit
+pnpm exec tsc --noEmit -p tsconfig.pages.json
 pnpm exec vite build --config vite.pages.config.ts
 ```
 
